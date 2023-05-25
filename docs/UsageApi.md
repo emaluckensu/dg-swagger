@@ -1,4 +1,4 @@
-# swagger_client.UsageApi
+# kensu_datagalaxy_client.UsageApi
 
 All URIs are relative to */v2*
 
@@ -24,16 +24,16 @@ Create a <b>usage</b> in the specified <b>parent</b> (workspace or compatible us
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.UsageApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttribute) | 
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Create a usage.
@@ -77,15 +77,15 @@ This route creates or update multiple usages and all their children up to a tota
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.UsageBulktreeCreation()] # list[UsageBulktreeCreation] | 
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.UsageApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.UsageBulktreeCreation()] # list[UsageBulktreeCreation] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk upsert a usage tree
@@ -128,15 +128,15 @@ Deletes a list of **usages** referenced by their id. <br><br> **Warning: deletin
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.DoubleUuid()] # list[DoubleUuid] | List of ids referencing usages
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.UsageApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.DoubleUuid()] # list[DoubleUuid] | List of ids referencing usages
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk delete usages
@@ -179,15 +179,15 @@ Deletes the specified <b>usage</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-usage_id = swagger_client.Uuid() # Uuid | 
+api_instance = kensu_datagalaxy_client.UsageApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+usage_id = kensu_datagalaxy_client.Uuid() # Uuid | 
 
 try:
     # Delete a usage.
@@ -229,13 +229,13 @@ Return the list of <b>Usage types</b> and their compatible <b>children types</b>
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.UsageApi(kensu_datagalaxy_client.ApiClient(configuration))
 
 try:
     # List the usage types.
@@ -274,15 +274,15 @@ Return the <b>details</b> of the specified <b>usage</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-usage_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.UsageApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+usage_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Return a usage.
@@ -325,24 +325,24 @@ Return a list of all <b>usage</b> contained in the specified <b>parent</b>. A <b
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid |  (optional)
+api_instance = kensu_datagalaxy_client.UsageApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid |  (optional)
 name = 'name_example' # str |  (optional)
 technical_name = 'technical_name_example' # str |  (optional)
-include_access_data = swagger_client.IncludeAccessData() # IncludeAccessData |  (optional)
-include_attributes = swagger_client.IncludeAttributes() # IncludeAttributes |  (optional)
-include_links = swagger_client.IncludeLinks() # IncludeLinks |  (optional)
-type = swagger_client.UsageType() # UsageType |  (optional)
+include_access_data = kensu_datagalaxy_client.IncludeAccessData() # IncludeAccessData |  (optional)
+include_attributes = kensu_datagalaxy_client.IncludeAttributes() # IncludeAttributes |  (optional)
+include_links = kensu_datagalaxy_client.IncludeLinks() # IncludeLinks |  (optional)
+type = kensu_datagalaxy_client.UsageType() # UsageType |  (optional)
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
-max_depth = swagger_client.MaxDepth() # MaxDepth |  (optional)
+max_depth = kensu_datagalaxy_client.MaxDepth() # MaxDepth |  (optional)
 
 try:
     # Return a list of usages.
@@ -394,16 +394,16 @@ Modifies one or more attributes of the specified <b>usage</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.UsageApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttribute) | 
-version_id = swagger_client.VersionId() # VersionId | 
-usage_id = swagger_client.DoubleUuid() # DoubleUuid | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+usage_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Edit a usage.

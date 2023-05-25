@@ -1,4 +1,4 @@
-# swagger_client.LinksApi
+# kensu_datagalaxy_client.LinksApi
 
 All URIs are relative to */v2*
 
@@ -21,15 +21,15 @@ This route creates multiple links between entities. <br> A link is defined by a 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LinksApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.BulkLinksPayload()] # list[BulkLinksPayload] | 
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.LinksApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.BulkLinksPayload()] # list[BulkLinksPayload] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk create links using entityIds
@@ -72,16 +72,16 @@ Create a <b>link</b> between the specified <b>entity</b> and its <b>target</b>.<
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LinksApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LinksCreationRequest() # LinksCreationRequest | 
-version_id = swagger_client.VersionId() # VersionId | 
-from_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.LinksApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.LinksCreationRequest() # LinksCreationRequest | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+from_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Create an entity link.
@@ -125,15 +125,15 @@ This route creates multiple links between entities. <br> A link is defined with 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LinksApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.LinksBulktreePayload()] # list[LinksBulktreePayload] | 
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.LinksApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.LinksBulktreePayload()] # list[LinksBulktreePayload] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk create links using Paths
@@ -176,17 +176,17 @@ Deletes the specified <b>link</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LinksApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-from_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.LinksApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+from_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 link_type = 'link_type_example' # str | 
-to_id = swagger_client.DoubleUuid() # DoubleUuid | 
+to_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Delete a link.
@@ -230,15 +230,15 @@ Return a list of all <b>links</b> owned by the specified <b>entity</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LinksApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-from_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.LinksApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+from_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Return a list of links.

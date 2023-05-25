@@ -1,4 +1,4 @@
-# swagger_client.ContainersApi
+# kensu_datagalaxy_client.ContainersApi
 
 All URIs are relative to */v2*
 
@@ -25,16 +25,16 @@ Massively create <b>containers</b> in the specified <b>parent</b>. (max 250 000)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ContainersApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.ContainerBulkCreation()] # list[ContainerBulkCreation] | 
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.ContainersApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.ContainerBulkCreation()] # list[ContainerBulkCreation] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Bulk create containers.
@@ -78,16 +78,16 @@ Create a <b>container</b> in the specified <b>parent</b>.<br><br> Available cont
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ContainersApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.ContainersApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttribute) | 
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Create a container.
@@ -131,15 +131,15 @@ Deletes a list of **container** referenced by their id. <br><br> **Warning: dele
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ContainersApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.DoubleUuid()] # list[DoubleUuid] | List of ids referencing containers
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.ContainersApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.DoubleUuid()] # list[DoubleUuid] | List of ids referencing containers
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk delete containers
@@ -182,15 +182,15 @@ Deletes the specified <b>container</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ContainersApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-container_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.ContainersApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+container_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Delete a container.
@@ -232,15 +232,15 @@ Return the details of a container.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ContainersApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-container_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.ContainersApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+container_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Return the details of a container.
@@ -283,24 +283,24 @@ Return a list of all <b>containers</b> contained in the specified <b>source / co
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ContainersApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid |  (optional)
+api_instance = kensu_datagalaxy_client.ContainersApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid |  (optional)
 name = 'name_example' # str |  (optional)
 technical_name = 'technical_name_example' # str |  (optional)
-type = swagger_client.ContainerType() # ContainerType |  (optional)
-include_access_data = swagger_client.IncludeAccessData() # IncludeAccessData |  (optional)
-include_attributes = swagger_client.IncludeAttributes() # IncludeAttributes |  (optional)
-include_links = swagger_client.IncludeLinks() # IncludeLinks |  (optional)
+type = kensu_datagalaxy_client.ContainerType() # ContainerType |  (optional)
+include_access_data = kensu_datagalaxy_client.IncludeAccessData() # IncludeAccessData |  (optional)
+include_attributes = kensu_datagalaxy_client.IncludeAttributes() # IncludeAttributes |  (optional)
+include_links = kensu_datagalaxy_client.IncludeLinks() # IncludeLinks |  (optional)
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
-max_depth = swagger_client.MaxDepth() # MaxDepth |  (optional)
+max_depth = kensu_datagalaxy_client.MaxDepth() # MaxDepth |  (optional)
 
 try:
     # Return a list of containers.
@@ -352,13 +352,13 @@ Return the list of <b>containers types</b> and their compatible <b>children type
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ContainersApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.ContainersApi(kensu_datagalaxy_client.ApiClient(configuration))
 
 try:
     # List the container types.
@@ -397,16 +397,16 @@ Massively edit <b>containers</b> in the specified <b>parent</b>. (max 250 000)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ContainersApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.ContainerBulkUpdate()] # list[ContainerBulkUpdate] | 
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.ContainersApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.ContainerBulkUpdate()] # list[ContainerBulkUpdate] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Bulk edit containers.
@@ -450,16 +450,16 @@ Modifies one or more attributes of the specified <b>container</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ContainersApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.ContainersApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttribute) | 
-version_id = swagger_client.VersionId() # VersionId | 
-container_id = swagger_client.DoubleUuid() # DoubleUuid | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+container_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Edit a container.

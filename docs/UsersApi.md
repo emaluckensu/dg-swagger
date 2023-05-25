@@ -1,4 +1,4 @@
-# swagger_client.UsersApi
+# kensu_datagalaxy_client.UsersApi
 
 All URIs are relative to */v2*
 
@@ -24,14 +24,14 @@ Create a user and add it to your account. <br>A user can be created with no lice
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UserCreationBody() # UserCreationBody | 
+api_instance = kensu_datagalaxy_client.UsersApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.UserCreationBody() # UserCreationBody | 
 
 try:
     # Create a user.
@@ -73,14 +73,14 @@ Permanently deletes a user.<br><br> When deleting a user that had an owner or st
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
-user_id = swagger_client.Uuid() # Uuid | 
+api_instance = kensu_datagalaxy_client.UsersApi(kensu_datagalaxy_client.ApiClient(configuration))
+user_id = kensu_datagalaxy_client.Uuid() # Uuid | 
 
 try:
     # Delete a user
@@ -121,17 +121,17 @@ Return a list of <b>users</b> eligible to be <b>stewards</b> or <b>owners</b> in
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
-role = swagger_client.Roles() # Roles | 
-version_id = swagger_client.VersionId() # VersionId | 
-user_id = swagger_client.Uuid() # Uuid |  (optional)
-email = swagger_client.Email() # Email |  (optional)
+api_instance = kensu_datagalaxy_client.UsersApi(kensu_datagalaxy_client.ApiClient(configuration))
+role = kensu_datagalaxy_client.Roles() # Roles | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+user_id = kensu_datagalaxy_client.Uuid() # Uuid |  (optional)
+email = kensu_datagalaxy_client.Email() # Email |  (optional)
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
 
@@ -180,15 +180,15 @@ Return a list of all the <b>users</b> owned by your account.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
-user_id = swagger_client.Uuid() # Uuid |  (optional)
-email = swagger_client.Email() # Email |  (optional)
+api_instance = kensu_datagalaxy_client.UsersApi(kensu_datagalaxy_client.ApiClient(configuration))
+user_id = kensu_datagalaxy_client.Uuid() # Uuid |  (optional)
+email = kensu_datagalaxy_client.Email() # Email |  (optional)
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
 
@@ -235,16 +235,16 @@ Return the list of all users owned by your account with the authorizations they 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-user_id = swagger_client.Uuid() # Uuid |  (optional)
-email = swagger_client.Email() # Email |  (optional)
+api_instance = kensu_datagalaxy_client.UsersApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+user_id = kensu_datagalaxy_client.Uuid() # Uuid |  (optional)
+email = kensu_datagalaxy_client.Email() # Email |  (optional)
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
 
@@ -292,17 +292,17 @@ Return list of users assigned to each of the 6 governance roles: **Owner, Stewar
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
-role = [swagger_client.Roles()] # list[Roles] |  (optional)
-version_id = swagger_client.Uuid() # Uuid |  (optional)
-user_id = [swagger_client.Uuid()] # list[Uuid] |  (optional)
-email = [swagger_client.Email()] # list[Email] |  (optional)
+api_instance = kensu_datagalaxy_client.UsersApi(kensu_datagalaxy_client.ApiClient(configuration))
+role = [kensu_datagalaxy_client.Roles()] # list[Roles] |  (optional)
+version_id = kensu_datagalaxy_client.Uuid() # Uuid |  (optional)
+user_id = [kensu_datagalaxy_client.Uuid()] # list[Uuid] |  (optional)
+email = [kensu_datagalaxy_client.Email()] # list[Email] |  (optional)
 
 try:
     # Fetch governance users
@@ -347,15 +347,15 @@ Update the properties of a user. Set <code>licenseId</code> to <i>null</i> to re
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UserUpdateBody() # UserUpdateBody | 
-user_id = swagger_client.Uuid() # Uuid | 
+api_instance = kensu_datagalaxy_client.UsersApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.UserUpdateBody() # UserUpdateBody | 
+user_id = kensu_datagalaxy_client.Uuid() # Uuid | 
 
 try:
     # Update the properties of a user.
@@ -398,14 +398,14 @@ Update the authorizations of a list of users on a workspace and its modules.<br>
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UsersUpdateAuthorizationsBody() # UsersUpdateAuthorizationsBody | 
+api_instance = kensu_datagalaxy_client.UsersApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.UsersUpdateAuthorizationsBody() # UsersUpdateAuthorizationsBody | 
 
 try:
     # Update the authorizations of a list of users

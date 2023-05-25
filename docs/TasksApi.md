@@ -1,4 +1,4 @@
-# swagger_client.TasksApi
+# kensu_datagalaxy_client.TasksApi
 
 All URIs are relative to */v2*
 
@@ -21,16 +21,16 @@ Delete a <b>task</b> from the specified <b>entity</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TasksApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-entity_id = swagger_client.DoubleUuid() # DoubleUuid | 
-task_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.TasksApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+entity_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
+task_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Delete a task.
@@ -73,15 +73,15 @@ Return a list of all <b>tasks</b> associated with an <b>entity</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TasksApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-entity_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.TasksApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+entity_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # List entity tasks
@@ -124,19 +124,19 @@ Return the list of <b>tasks</b> of which the user associated to the integrationT
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TasksApi(swagger_client.ApiClient(configuration))
-q = swagger_client.SearchQuery() # SearchQuery |  (optional)
-creator = [swagger_client.Email()] # list[Email] |  (optional)
-assignee = [swagger_client.Email()] # list[Email] |  (optional)
-status = swagger_client.TaskStatus() # TaskStatus |  (optional)
-type = swagger_client.TaskType() # TaskType |  (optional)
-version_id = swagger_client.Uuid() # Uuid |  (optional)
+api_instance = kensu_datagalaxy_client.TasksApi(kensu_datagalaxy_client.ApiClient(configuration))
+q = kensu_datagalaxy_client.SearchQuery() # SearchQuery |  (optional)
+creator = [kensu_datagalaxy_client.Email()] # list[Email] |  (optional)
+assignee = [kensu_datagalaxy_client.Email()] # list[Email] |  (optional)
+status = kensu_datagalaxy_client.TaskStatus() # TaskStatus |  (optional)
+type = kensu_datagalaxy_client.TaskType() # TaskType |  (optional)
+version_id = kensu_datagalaxy_client.Uuid() # Uuid |  (optional)
 
 try:
     # List user tasks
@@ -183,16 +183,16 @@ Create a <b>task</b> in the specified <b>entity</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TasksApi(swagger_client.ApiClient(configuration))
-body = swagger_client.TaskCreationPayload() # TaskCreationPayload | 
-version_id = swagger_client.VersionId() # VersionId | 
-entity_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.TasksApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.TaskCreationPayload() # TaskCreationPayload | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+entity_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Create a task.
@@ -236,17 +236,17 @@ Update a <b>task</b> in the specified <b>entity</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TasksApi(swagger_client.ApiClient(configuration))
-body = swagger_client.TaskUpdatePayload() # TaskUpdatePayload | 
-version_id = swagger_client.VersionId() # VersionId | 
-entity_id = swagger_client.DoubleUuid() # DoubleUuid | 
-task_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.TasksApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.TaskUpdatePayload() # TaskUpdatePayload | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+entity_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
+task_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Update a task.

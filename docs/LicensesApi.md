@@ -1,4 +1,4 @@
-# swagger_client.LicensesApi
+# kensu_datagalaxy_client.LicensesApi
 
 All URIs are relative to */v2*
 
@@ -17,15 +17,15 @@ Return the list of <b>licenses</b> owned by your account. <br> Licenses are <b>g
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.LicensesApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.LicensesApi(kensu_datagalaxy_client.ApiClient(configuration))
 assigned = true # bool |  (optional)
-license_level = swagger_client.LicenseLevel() # LicenseLevel |  (optional)
+license_level = kensu_datagalaxy_client.LicenseLevel() # LicenseLevel |  (optional)
 
 try:
     # Return the list of licences owned by your account.

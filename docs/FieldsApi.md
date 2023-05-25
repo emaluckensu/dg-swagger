@@ -1,4 +1,4 @@
-# swagger_client.FieldsApi
+# kensu_datagalaxy_client.FieldsApi
 
 All URIs are relative to */v2*
 
@@ -25,16 +25,16 @@ Create a <b>field</b> inside the specified <b>structure</b>.<br><br> Available f
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FieldsApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.FieldsApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttribute) | 
-version_id = swagger_client.VersionId() # VersionId | 
-structure_id = swagger_client.DoubleUuid() # DoubleUuid | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+structure_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Create a field.
@@ -78,16 +78,16 @@ Massively create <b>fields</b> in the specified <b>parent</b>. (max 250 000)<br>
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FieldsApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.FieldBulkCreation()] # list[FieldBulkCreation] | 
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.FieldsApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.FieldBulkCreation()] # list[FieldBulkCreation] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Bulk create fields.
@@ -131,15 +131,15 @@ Deletes a list of **fields** referenced by their id. <br><br> **Warning: deletin
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FieldsApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.DoubleUuid()] # list[DoubleUuid] | List of ids referencing fields
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.FieldsApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.DoubleUuid()] # list[DoubleUuid] | List of ids referencing fields
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk delete fields
@@ -182,15 +182,15 @@ Deletes the specified <b>field</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FieldsApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-field_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.FieldsApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+field_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Delete a field.
@@ -232,15 +232,15 @@ Return the <b>details</b> of the specified <b>field</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FieldsApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-field_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.FieldsApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+field_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Return a field.
@@ -283,24 +283,24 @@ Return a list of <b>fields</b> contained by a <b>structure</b>. If <b>parentId</
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FieldsApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid |  (optional)
+api_instance = kensu_datagalaxy_client.FieldsApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid |  (optional)
 name = 'name_example' # str |  (optional)
 technical_name = 'technical_name_example' # str |  (optional)
-type = swagger_client.FieldType() # FieldType |  (optional)
-include_access_data = swagger_client.IncludeAccessData() # IncludeAccessData |  (optional)
-include_attributes = swagger_client.IncludeAttributes() # IncludeAttributes |  (optional)
-include_links = swagger_client.IncludeLinks() # IncludeLinks |  (optional)
+type = kensu_datagalaxy_client.FieldType() # FieldType |  (optional)
+include_access_data = kensu_datagalaxy_client.IncludeAccessData() # IncludeAccessData |  (optional)
+include_attributes = kensu_datagalaxy_client.IncludeAttributes() # IncludeAttributes |  (optional)
+include_links = kensu_datagalaxy_client.IncludeLinks() # IncludeLinks |  (optional)
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
-max_depth = swagger_client.MaxDepth() # MaxDepth |  (optional)
+max_depth = kensu_datagalaxy_client.MaxDepth() # MaxDepth |  (optional)
 
 try:
     # Return a list of fields.
@@ -352,13 +352,13 @@ Return the list of <b>field types</b> and their compatible <b>parent types</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FieldsApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.FieldsApi(kensu_datagalaxy_client.ApiClient(configuration))
 
 try:
     # List the field types.
@@ -397,16 +397,16 @@ Massively edit <b>fields</b> in the specified parent. (max 250 000)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FieldsApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.FieldBulkUpdate()] # list[FieldBulkUpdate] | 
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.FieldsApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.FieldBulkUpdate()] # list[FieldBulkUpdate] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Bulk edit fields.
@@ -450,16 +450,16 @@ Modifies one or more <b>attributes</b> of the specified <b>field</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FieldsApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.FieldsApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttribute) | 
-version_id = swagger_client.VersionId() # VersionId | 
-field_id = swagger_client.DoubleUuid() # DoubleUuid | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+field_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Edit a field.

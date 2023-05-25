@@ -1,4 +1,4 @@
-# swagger_client.StructuresApi
+# kensu_datagalaxy_client.StructuresApi
 
 All URIs are relative to */v2*
 
@@ -25,16 +25,16 @@ Create a <b>structure</b> inside the specified <b>parent entity</b>.<br><br> Ava
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StructuresApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.StructuresApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttribute) | 
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Create a structure.
@@ -78,16 +78,16 @@ Massively create <b>structures</b> in the specified parent. (max 250 000)<br> <b
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StructuresApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.StructureBulkCreation()] # list[StructureBulkCreation] | 
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.StructuresApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.StructureBulkCreation()] # list[StructureBulkCreation] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Bulk create structures
@@ -131,15 +131,15 @@ Deletes a list of **structures** referenced by their id. <br><br> **Warning: del
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StructuresApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.DoubleUuid()] # list[DoubleUuid] | List of ids referencing structures
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.StructuresApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.DoubleUuid()] # list[DoubleUuid] | List of ids referencing structures
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk delete structures
@@ -182,15 +182,15 @@ Deletes the specified <b>structure</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StructuresApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-structure_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.StructuresApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+structure_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Delete a structure.
@@ -232,15 +232,15 @@ Return the <b>details</b> of the specified <b>structure</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StructuresApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-structure_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.StructuresApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+structure_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Return a structure.
@@ -283,24 +283,24 @@ Return a list of all existing <b>structures</b> contained in the specified <b>so
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StructuresApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid |  (optional)
+api_instance = kensu_datagalaxy_client.StructuresApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid |  (optional)
 name = 'name_example' # str |  (optional)
 technical_name = 'technical_name_example' # str |  (optional)
-type = swagger_client.StructureType() # StructureType |  (optional)
-include_access_data = swagger_client.IncludeAccessData() # IncludeAccessData |  (optional)
-include_attributes = swagger_client.IncludeAttributes() # IncludeAttributes |  (optional)
-include_links = swagger_client.IncludeLinks() # IncludeLinks |  (optional)
+type = kensu_datagalaxy_client.StructureType() # StructureType |  (optional)
+include_access_data = kensu_datagalaxy_client.IncludeAccessData() # IncludeAccessData |  (optional)
+include_attributes = kensu_datagalaxy_client.IncludeAttributes() # IncludeAttributes |  (optional)
+include_links = kensu_datagalaxy_client.IncludeLinks() # IncludeLinks |  (optional)
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
-max_depth = swagger_client.MaxDepth() # MaxDepth |  (optional)
+max_depth = kensu_datagalaxy_client.MaxDepth() # MaxDepth |  (optional)
 
 try:
     # Return a list of structures.
@@ -352,13 +352,13 @@ Return the list of <b>structure types</b> and their compatible <b>field types</b
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StructuresApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.StructuresApi(kensu_datagalaxy_client.ApiClient(configuration))
 
 try:
     # List the structure types.
@@ -397,16 +397,16 @@ Massively edit <b>structures</b> in the specified parent. (max 250 000)
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StructuresApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.StructureBulkUpdate()] # list[StructureBulkUpdate] | 
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.StructuresApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.StructureBulkUpdate()] # list[StructureBulkUpdate] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Bulk edit structures
@@ -450,16 +450,16 @@ Modifies one or more <b>attributes</b> of the specified <b>structure</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.StructuresApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.StructuresApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttribute) | 
-version_id = swagger_client.VersionId() # VersionId | 
-structure_id = swagger_client.DoubleUuid() # DoubleUuid | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+structure_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Edit a structure.

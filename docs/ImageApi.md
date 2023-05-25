@@ -1,4 +1,4 @@
-# swagger_client.ImageApi
+# kensu_datagalaxy_client.ImageApi
 
 All URIs are relative to */v2*
 
@@ -18,12 +18,12 @@ Fetch the image associated to the <code>hash</code> given in parameters.<br/> Th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ImageApi()
+api_instance = kensu_datagalaxy_client.ImageApi()
 hash = 'hash_example' # str | Image hash to get. <b>Must be URL-encoded</b>.
 
 try:
@@ -66,12 +66,12 @@ Upload an image to DataGalaxy and associate it to a resource using the <code>cat
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ImageApi()
+api_instance = kensu_datagalaxy_client.ImageApi()
 image = 'image_example' # str | 
 category = 'category_example' # str | 
 workspace_id = 'workspace_id_example' # str | 

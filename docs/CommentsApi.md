@@ -1,4 +1,4 @@
-# swagger_client.CommentsApi
+# kensu_datagalaxy_client.CommentsApi
 
 All URIs are relative to */v2*
 
@@ -20,16 +20,16 @@ Delete a <b>comment</b> associated with the specified <b>entity</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.CommentsApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-entity_id = swagger_client.DoubleUuid() # DoubleUuid | 
-comment_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.CommentsApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+entity_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
+comment_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Delete a comment
@@ -72,15 +72,15 @@ Return a list of all <b>comments details</b> in the specified <b>entity</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.CommentsApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-entity_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.CommentsApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+entity_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Return a list of comments.
@@ -123,16 +123,16 @@ Create a <b>comment</b> in the specified <b>entity</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.CommentsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CommentPayload() # CommentPayload | 
-version_id = swagger_client.VersionId() # VersionId | 
-entity_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.CommentsApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.CommentPayload() # CommentPayload | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+entity_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Create a comment.
@@ -176,17 +176,17 @@ Update a <b>comment</b> in the specified <b>entity</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.CommentsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CommentPayload() # CommentPayload | 
-version_id = swagger_client.VersionId() # VersionId | 
-entity_id = swagger_client.DoubleUuid() # DoubleUuid | 
-comment_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.CommentsApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.CommentPayload() # CommentPayload | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+entity_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
+comment_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Update a comment

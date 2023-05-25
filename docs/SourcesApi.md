@@ -1,4 +1,4 @@
-# swagger_client.SourcesApi
+# kensu_datagalaxy_client.SourcesApi
 
 All URIs are relative to */v2*
 
@@ -32,15 +32,15 @@ Create <b>sources</b> in bulk mode (max 100) in the specified workspace.<br> <br
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.SourceBulkCreation()] # list[SourceBulkCreation] | 
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.SourceBulkCreation()] # list[SourceBulkCreation] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk create sources.
@@ -83,16 +83,16 @@ Update or create the primary keys of a relational source.<br> Path properties ha
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.ForeignKeyPayload()] # list[ForeignKeyPayload] | 
-version_id = swagger_client.VersionId() # VersionId | 
-source_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.ForeignKeyPayload()] # list[ForeignKeyPayload] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+source_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Update/create the foreign keys of a relational source.
@@ -136,16 +136,16 @@ Update or create the primary keys of a relational source.<br> <code>tablePath</c
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.PrimaryKeyPayload()] # list[PrimaryKeyPayload] | 
-version_id = swagger_client.VersionId() # VersionId | 
-source_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.PrimaryKeyPayload()] # list[PrimaryKeyPayload] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+source_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Update/create the primary keys of a relational source.
@@ -189,15 +189,15 @@ Create a <b>source</b> in the specified <b>workspace</b>.<br><br> Available sour
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttribute) | 
-version_id = swagger_client.VersionId() # VersionId | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Create a source.
@@ -240,15 +240,15 @@ This route upserts a Source and all it's children up to a total of 250 000 entit
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttributeBulk) | 
-version_id = swagger_client.VersionId() # VersionId | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk upsert a dictionary entities tree
@@ -291,15 +291,15 @@ Deletes a list of **sources** referenced by their id. <br><br> **Warning: deleti
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.DoubleUuid()] # list[DoubleUuid] | List of ids referencing sources
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.DoubleUuid()] # list[DoubleUuid] | List of ids referencing sources
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk delete sources
@@ -342,16 +342,16 @@ Deletes the specified <b>foreignKey</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-source_id = swagger_client.DoubleUuid() # DoubleUuid | 
-foreign_key_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+source_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
+foreign_key_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Delete a foreignKey.
@@ -394,16 +394,16 @@ Remove the specified <b>column</b> from its attributed privateKey.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-source_id = swagger_client.DoubleUuid() # DoubleUuid | 
-column_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+source_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
+column_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Remove column from privateKey.
@@ -446,15 +446,15 @@ Deletes the specified <b>source</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-source_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+source_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Delete a source.
@@ -496,15 +496,15 @@ Return the list of Primary Keys in the specified <b>source</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-source_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+source_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Get Foreign Keys list.
@@ -547,15 +547,15 @@ Return the list of Primary Keys in the specified <b>source</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-source_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+source_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Get Primary Keys list.
@@ -598,15 +598,15 @@ Return the <b>details</b> of the specified <b>source</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-source_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+source_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Return a source.
@@ -649,23 +649,23 @@ Return a list of all <b>sources</b> contained in the specified <b>workspace</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 name = 'name_example' # str |  (optional)
 technical_name = 'technical_name_example' # str |  (optional)
-type = swagger_client.SourceType() # SourceType |  (optional)
-include_access_data = swagger_client.IncludeAccessData() # IncludeAccessData |  (optional)
-include_attributes = swagger_client.IncludeAttributes() # IncludeAttributes |  (optional)
-include_links = swagger_client.IncludeLinks() # IncludeLinks |  (optional)
+type = kensu_datagalaxy_client.SourceType() # SourceType |  (optional)
+include_access_data = kensu_datagalaxy_client.IncludeAccessData() # IncludeAccessData |  (optional)
+include_attributes = kensu_datagalaxy_client.IncludeAttributes() # IncludeAttributes |  (optional)
+include_links = kensu_datagalaxy_client.IncludeLinks() # IncludeLinks |  (optional)
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
-max_depth = swagger_client.MaxDepth() # MaxDepth |  (optional)
+max_depth = kensu_datagalaxy_client.MaxDepth() # MaxDepth |  (optional)
 
 try:
     # Return a list of sources.
@@ -716,13 +716,13 @@ Return the list of <b>source types</b> and their compatible <b>children types</b
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
 
 try:
     # List the source types.
@@ -761,15 +761,15 @@ Edit <b>sources</b> in bulk mode (max 100) in the specified workspace.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.SourceBulkUpdate()] # list[SourceBulkUpdate] | 
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.SourceBulkUpdate()] # list[SourceBulkUpdate] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk edit sources.
@@ -812,16 +812,16 @@ Modifies one or more attributes of the specified <b>source</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SourcesApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.SourcesApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttribute) | 
-version_id = swagger_client.VersionId() # VersionId | 
-source_id = swagger_client.DoubleUuid() # DoubleUuid | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+source_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Edit a source.
