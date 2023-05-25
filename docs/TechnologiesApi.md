@@ -1,4 +1,4 @@
-# swagger_client.TechnologiesApi
+# kensu_datagalaxy_client.TechnologiesApi
 
 All URIs are relative to */v2*
 
@@ -20,14 +20,14 @@ Add a custom technology to DataGalaxy using this endpoint.<br>  <h4>Adding techn
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TechnologiesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CreateTechnologyBody() # CreateTechnologyBody | 
+api_instance = kensu_datagalaxy_client.TechnologiesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.CreateTechnologyBody() # CreateTechnologyBody | 
 
 try:
     api_response = api_instance.create_techonogy(body)
@@ -68,13 +68,13 @@ Delete a technology.<br> Read our <a href=\"https://datagalaxy.freshdesk.com/en/
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TechnologiesApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.TechnologiesApi(kensu_datagalaxy_client.ApiClient(configuration))
 technology_code = 'technology_code_example' # str | 
 
 try:
@@ -115,13 +115,13 @@ Use this endpoint in order to fetch Technologies, their associated <i>modules</i
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TechnologiesApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.TechnologiesApi(kensu_datagalaxy_client.ApiClient(configuration))
 
 try:
     api_response = api_instance.get_technologies()
@@ -159,14 +159,14 @@ Update a technology's <code>displayName</code>, <code>description</code> and ass
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TechnologiesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.UpdateTechnologyBody() # UpdateTechnologyBody | 
+api_instance = kensu_datagalaxy_client.TechnologiesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.UpdateTechnologyBody() # UpdateTechnologyBody | 
 technology_code = 'technology_code_example' # str | 
 
 try:

@@ -1,4 +1,4 @@
-# swagger_client.AttributesApi
+# kensu_datagalaxy_client.AttributesApi
 
 All URIs are relative to */v2*
 
@@ -28,14 +28,14 @@ Learn more about attributes with <a href=\"https://datagalaxy.freshdesk.com/en/s
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AttributesApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.AttributeBulkCreationBody()] # list[AttributeBulkCreationBody] | 
+api_instance = kensu_datagalaxy_client.AttributesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.AttributeBulkCreationBody()] # list[AttributeBulkCreationBody] | 
 
 try:
     # Bulk create attributes
@@ -77,14 +77,14 @@ Learn more about attributes with <a href=\"https://datagalaxy.freshdesk.com/en/s
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AttributesApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.AttributeBulkUpdateBody()] # list[AttributeBulkUpdateBody] | 
+api_instance = kensu_datagalaxy_client.AttributesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.AttributeBulkUpdateBody()] # list[AttributeBulkUpdateBody] | 
 
 try:
     # Bulk edit attributes
@@ -126,15 +126,15 @@ Learn more about attributes with <a href=\"https://datagalaxy.freshdesk.com/en/s
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AttributesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AttributeCreationBody() # AttributeCreationBody | 
-data_type = swagger_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | Specifies the <code>dataType</code> this attribute will be associated with
+api_instance = kensu_datagalaxy_client.AttributesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.AttributeCreationBody() # AttributeCreationBody | 
+data_type = kensu_datagalaxy_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | Specifies the <code>dataType</code> this attribute will be associated with
 
 try:
     # Create a custom attribute
@@ -177,16 +177,16 @@ This route adds up to 100 values to attributes with format:  - `ValueList`, - `H
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AttributesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AttributesValuesBody1() # AttributesValuesBody1 | 
-data_type = swagger_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | 
-attribute_key = swagger_client.AttributeKey() # AttributeKey | 
+api_instance = kensu_datagalaxy_client.AttributesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.AttributesValuesBody1() # AttributesValuesBody1 | 
+data_type = kensu_datagalaxy_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | 
+attribute_key = kensu_datagalaxy_client.AttributeKey() # AttributeKey | 
 
 try:
     # Add attribute values
@@ -230,15 +230,15 @@ Learn more about attributes with <a href=\"https://datagalaxy.freshdesk.com/en/s
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AttributesApi(swagger_client.ApiClient(configuration))
-data_type = swagger_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | Specifies the <code>dataType</code> associated with an attribute
-attribute_key = swagger_client.AttributeKey() # AttributeKey | Unique attribute identifier. Can be found with GET /attributes or when creating attributes with POST /attributes
+api_instance = kensu_datagalaxy_client.AttributesApi(kensu_datagalaxy_client.ApiClient(configuration))
+data_type = kensu_datagalaxy_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | Specifies the <code>dataType</code> associated with an attribute
+attribute_key = kensu_datagalaxy_client.AttributeKey() # AttributeKey | Unique attribute identifier. Can be found with GET /attributes or when creating attributes with POST /attributes
 
 try:
     # Delete a custom attribute
@@ -281,15 +281,15 @@ This route fetches available values for attributes with format:  - `ValueList`, 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AttributesApi(swagger_client.ApiClient(configuration))
-data_type = swagger_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | 
-attribute_key = swagger_client.AttributeKey() # AttributeKey | 
+api_instance = kensu_datagalaxy_client.AttributesApi(kensu_datagalaxy_client.ApiClient(configuration))
+data_type = kensu_datagalaxy_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | 
+attribute_key = kensu_datagalaxy_client.AttributeKey() # AttributeKey | 
 
 try:
     # List attribute values
@@ -332,14 +332,14 @@ Return a list of attributes available for a given <code>dataType</code>.<br> Not
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AttributesApi(swagger_client.ApiClient(configuration))
-data_type = swagger_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | 
+api_instance = kensu_datagalaxy_client.AttributesApi(kensu_datagalaxy_client.ApiClient(configuration))
+data_type = kensu_datagalaxy_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | 
 
 try:
     # Return a list of attributes
@@ -381,14 +381,14 @@ List of available attributes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AttributesApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.AttributesApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 module_name = 'module_name_example' # str |  (optional)
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
@@ -436,13 +436,13 @@ List available tags
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AttributesApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.AttributesApi(kensu_datagalaxy_client.ApiClient(configuration))
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
 color = 'color_example' # str |  (optional)
@@ -495,14 +495,14 @@ Create tag
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AttributesApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.TagsBody()] # list[TagsBody] | 
+api_instance = kensu_datagalaxy_client.AttributesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.TagsBody()] # list[TagsBody] | 
 
 try:
     # Create tag
@@ -544,15 +544,15 @@ Learn more about attributes with <a href=\"https://datagalaxy.freshdesk.com/en/s
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AttributesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AttributeUpdateBody() # AttributeUpdateBody | 
-data_type = swagger_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | Specifies the <code>dataType</code> associated with an attribute
+api_instance = kensu_datagalaxy_client.AttributesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.AttributeUpdateBody() # AttributeUpdateBody | 
+data_type = kensu_datagalaxy_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | Specifies the <code>dataType</code> associated with an attribute
 attribute_key = 'attribute_key_example' # str | Unique attribute identifier. Can be found with GET /attributes or when creating attributes with POST /attributes
 
 try:
@@ -597,16 +597,16 @@ This route updates up to 100 attribute values for attributes with format:  - `Va
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AttributesApi(swagger_client.ApiClient(configuration))
-body = swagger_client.AttributesValuesBody() # AttributesValuesBody | 
-data_type = swagger_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | 
-attribute_key = swagger_client.AttributeKey() # AttributeKey | 
+api_instance = kensu_datagalaxy_client.AttributesApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.AttributesValuesBody() # AttributesValuesBody | 
+data_type = kensu_datagalaxy_client.AttributeDataTypeEnum() # AttributeDataTypeEnum | 
+attribute_key = kensu_datagalaxy_client.AttributeKey() # AttributeKey | 
 
 try:
     # Update attribute values

@@ -1,4 +1,4 @@
-# swagger_client.FilteredViewsApi
+# kensu_datagalaxy_client.FilteredViewsApi
 
 All URIs are relative to */v2*
 
@@ -17,13 +17,13 @@ This endpoint returns the details of a FilteredView. These objects are a set of 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.FilteredViewsApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.FilteredViewsApi(kensu_datagalaxy_client.ApiClient(configuration))
 filtered_view_id = 1.2 # float | 
 
 try:

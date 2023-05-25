@@ -1,4 +1,4 @@
-# swagger_client.SearchApi
+# kensu_datagalaxy_client.SearchApi
 
 All URIs are relative to */v2*
 
@@ -17,14 +17,14 @@ Search DataGalaxy objects with queries and filters <br>  <h3>Exact Matches</h3> 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SearchApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SearchBody() # SearchBody | 
+api_instance = kensu_datagalaxy_client.SearchApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.SearchBody() # SearchBody | 
 
 try:
     # Search DataGalaxy objects

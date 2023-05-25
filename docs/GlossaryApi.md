@@ -1,4 +1,4 @@
-# swagger_client.GlossaryApi
+# kensu_datagalaxy_client.GlossaryApi
 
 All URIs are relative to */v2*
 
@@ -26,16 +26,16 @@ Create a local synonym
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.GlossaryApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LocalSynonymCreationBody() # LocalSynonymCreationBody | Contains the name and description of your local synonym
-version_id = swagger_client.VersionId() # VersionId | 
-property_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.GlossaryApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.LocalSynonymCreationBody() # LocalSynonymCreationBody | Contains the name and description of your local synonym
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+property_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Create a local synonym
@@ -79,15 +79,15 @@ This route creates or update multiple properties and all their children up to a 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.GlossaryApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.PropertiesBulkTreeCreationRequest()] # list[PropertiesBulkTreeCreationRequest] | 
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.GlossaryApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.PropertiesBulkTreeCreationRequest()] # list[PropertiesBulkTreeCreationRequest] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk upsert a property tree
@@ -130,16 +130,16 @@ Create a <b>property</b> in the specified <b>parent</b> (workspace or compatible
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.GlossaryApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.GlossaryApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttribute) | 
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.DoubleUuid() # DoubleUuid | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Create a property.
@@ -183,15 +183,15 @@ Deletes a list of **properties** referenced by their id. <br><br> **Warning: del
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.GlossaryApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.DoubleUuid()] # list[DoubleUuid] | List of ids referencing properties
-version_id = swagger_client.VersionId() # VersionId | 
+api_instance = kensu_datagalaxy_client.GlossaryApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.DoubleUuid()] # list[DoubleUuid] | List of ids referencing properties
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
 
 try:
     # Bulk delete properties
@@ -232,15 +232,15 @@ Delete a local synonym
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.GlossaryApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-local_synonym_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.GlossaryApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+local_synonym_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Delete a local synonym
@@ -283,15 +283,15 @@ Deletes the specified <b>property</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.GlossaryApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-property_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.GlossaryApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+property_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Delete a property.
@@ -333,15 +333,15 @@ Fetches the list of synonyms on a property.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.GlossaryApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-property_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.GlossaryApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+property_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Get local synonyms
@@ -384,23 +384,23 @@ Return a list of all <b>properties</b> contained in the specified <b>workspace</
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.GlossaryApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-parent_id = swagger_client.Uuid() # Uuid |  (optional)
+api_instance = kensu_datagalaxy_client.GlossaryApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+parent_id = kensu_datagalaxy_client.Uuid() # Uuid |  (optional)
 name = 'name_example' # str |  (optional)
-type = swagger_client.PropertyType() # PropertyType |  (optional)
-include_access_data = swagger_client.IncludeAccessData() # IncludeAccessData |  (optional)
-include_attributes = swagger_client.IncludeAttributes() # IncludeAttributes |  (optional)
-include_links = swagger_client.IncludeLinks() # IncludeLinks |  (optional)
+type = kensu_datagalaxy_client.PropertyType() # PropertyType |  (optional)
+include_access_data = kensu_datagalaxy_client.IncludeAccessData() # IncludeAccessData |  (optional)
+include_attributes = kensu_datagalaxy_client.IncludeAttributes() # IncludeAttributes |  (optional)
+include_links = kensu_datagalaxy_client.IncludeLinks() # IncludeLinks |  (optional)
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
-max_depth = swagger_client.MaxDepth() # MaxDepth |  (optional)
+max_depth = kensu_datagalaxy_client.MaxDepth() # MaxDepth |  (optional)
 
 try:
     # Return a list of properties.
@@ -451,15 +451,15 @@ Return the <b>details</b> of the specified <b>property</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.GlossaryApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-property_id = swagger_client.Uuid() # Uuid | 
+api_instance = kensu_datagalaxy_client.GlossaryApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+property_id = kensu_datagalaxy_client.Uuid() # Uuid | 
 
 try:
     # Return a property.
@@ -502,13 +502,13 @@ Return the list of <b>properties types</b> and their compatible <b>entity types<
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.GlossaryApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.GlossaryApi(kensu_datagalaxy_client.ApiClient(configuration))
 
 try:
     # List the property types.
@@ -545,16 +545,16 @@ Update a local synonym
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.GlossaryApi(swagger_client.ApiClient(configuration))
-body = swagger_client.LocalSynonymUpdateBody() # LocalSynonymUpdateBody | 
-version_id = swagger_client.VersionId() # VersionId | 
-local_synonym_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.GlossaryApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.LocalSynonymUpdateBody() # LocalSynonymUpdateBody | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+local_synonym_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Update a local synonym
@@ -598,16 +598,16 @@ Modifies one or more attributes of the specified <b>property</b>.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.GlossaryApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.GlossaryApi(kensu_datagalaxy_client.ApiClient(configuration))
 body = NULL # dict(str, AdditionalCustomAttribute) | 
-version_id = swagger_client.VersionId() # VersionId | 
-property_id = swagger_client.DoubleUuid() # DoubleUuid | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+property_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Edit a property.

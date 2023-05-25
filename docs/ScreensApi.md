@@ -1,4 +1,4 @@
-# swagger_client.ScreensApi
+# kensu_datagalaxy_client.ScreensApi
 
 All URIs are relative to */v2*
 
@@ -21,14 +21,14 @@ Return a list of attribute screen layouts.<br> An attribute screen layout displa
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ScreensApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.Uuid() # Uuid | By default, this request will return <b>clientspace</b> level screen layouts.<br> If <code>versionId</code> is specified, this request will return <b>workspace</b> level screen layouts. (optional)
+api_instance = kensu_datagalaxy_client.ScreensApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.Uuid() # Uuid | By default, this request will return <b>clientspace</b> level screen layouts.<br> If <code>versionId</code> is specified, this request will return <b>workspace</b> level screen layouts. (optional)
 
 try:
     # Return a list of attribute screen layouts
@@ -70,15 +70,15 @@ Return a list of attribute screen layouts.<br> An attribute screen layout displa
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ScreensApi(swagger_client.ApiClient(configuration))
-data_type = swagger_client.ScreenDataTypes() # ScreenDataTypes | 
-version_id = swagger_client.Uuid() # Uuid | By default, this request will return <b>clientspace</b> level screen layouts.<br> If <code>versionId</code> is specified, this request will return <b>workspace</b> level screen layouts. (optional)
+api_instance = kensu_datagalaxy_client.ScreensApi(kensu_datagalaxy_client.ApiClient(configuration))
+data_type = kensu_datagalaxy_client.ScreenDataTypes() # ScreenDataTypes | 
+version_id = kensu_datagalaxy_client.Uuid() # Uuid | By default, this request will return <b>clientspace</b> level screen layouts.<br> If <code>versionId</code> is specified, this request will return <b>workspace</b> level screen layouts. (optional)
 
 try:
     # Return a list of attribute screen layouts filtered by dataType
@@ -121,16 +121,16 @@ Return a list of attribute screen layouts.<br> An attribute screen layout displa
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ScreensApi(swagger_client.ApiClient(configuration))
-data_type = swagger_client.ScreenDataTypes() # ScreenDataTypes | 
-type = swagger_client.LowerCaseAllTypes() # LowerCaseAllTypes | 
-version_id = swagger_client.Uuid() # Uuid | By default, this request will return <b>clientspace</b> level screen layouts.<br> If <code>versionId</code> is specified, this request will return <b>workspace</b> level screen layouts. (optional)
+api_instance = kensu_datagalaxy_client.ScreensApi(kensu_datagalaxy_client.ApiClient(configuration))
+data_type = kensu_datagalaxy_client.ScreenDataTypes() # ScreenDataTypes | 
+type = kensu_datagalaxy_client.LowerCaseAllTypes() # LowerCaseAllTypes | 
+version_id = kensu_datagalaxy_client.Uuid() # Uuid | By default, this request will return <b>clientspace</b> level screen layouts.<br> If <code>versionId</code> is specified, this request will return <b>workspace</b> level screen layouts. (optional)
 
 try:
     # Return a list of attribute screen layouts filtered by dataType and entity type
@@ -174,16 +174,16 @@ Reset an attribute screen to its default layout.  Learn more about attributes wi
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ScreensApi(swagger_client.ApiClient(configuration))
-data_type = swagger_client.ScreenDataTypes() # ScreenDataTypes | Target dataType
-type = swagger_client.LowerCaseAllTypes() # LowerCaseAllTypes | Target entity type
-version_id = swagger_client.Uuid() # Uuid | By default, this request will reset <b>clientspace</b> level screen layouts.<br> If <code>versionId</code> is specified, this request will reset <b>workspace</b> level screen layouts. (optional)
+api_instance = kensu_datagalaxy_client.ScreensApi(kensu_datagalaxy_client.ApiClient(configuration))
+data_type = kensu_datagalaxy_client.ScreenDataTypes() # ScreenDataTypes | Target dataType
+type = kensu_datagalaxy_client.LowerCaseAllTypes() # LowerCaseAllTypes | Target entity type
+version_id = kensu_datagalaxy_client.Uuid() # Uuid | By default, this request will reset <b>clientspace</b> level screen layouts.<br> If <code>versionId</code> is specified, this request will reset <b>workspace</b> level screen layouts. (optional)
 
 try:
     # Reset an Attribute Screen
@@ -227,17 +227,17 @@ Update an entire attribute screen layout.<br><br>  Here are some tips for your u
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.ScreensApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.CategoryBodyAttributeName_()] # list[CategoryBodyAttributeName_] | This represents your screen layout. <b>Categories and attributes order matters</b>
-data_type = swagger_client.ScreenDataTypes() # ScreenDataTypes | Target dataType
-type = swagger_client.LowerCaseAllTypes() # LowerCaseAllTypes | Target entity type
-version_id = swagger_client.Uuid() # Uuid | By default, this request will update <b>clientspace</b> level screen layouts.<br> If <code>versionId</code> is specified, this request will update <b>workspace</b> level screen layouts. (optional)
+api_instance = kensu_datagalaxy_client.ScreensApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.CategoryBodyAttributeName_()] # list[CategoryBodyAttributeName_] | This represents your screen layout. <b>Categories and attributes order matters</b>
+data_type = kensu_datagalaxy_client.ScreenDataTypes() # ScreenDataTypes | Target dataType
+type = kensu_datagalaxy_client.LowerCaseAllTypes() # LowerCaseAllTypes | Target entity type
+version_id = kensu_datagalaxy_client.Uuid() # Uuid | By default, this request will update <b>clientspace</b> level screen layouts.<br> If <code>versionId</code> is specified, this request will update <b>workspace</b> level screen layouts. (optional)
 
 try:
     # Update an attribute screen layout

@@ -1,4 +1,4 @@
-# swagger_client.HistoryApi
+# kensu_datagalaxy_client.HistoryApi
 
 All URIs are relative to */v2*
 
@@ -18,13 +18,13 @@ The object history feature keeps a record of your recently accessed objects. \\ 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HistoryApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.HistoryApi(kensu_datagalaxy_client.ApiClient(configuration))
 limit = 20 # float |  (optional) (default to 20)
 
 try:
@@ -67,13 +67,13 @@ The <b>queries history feature</b> helps you retrieve search payloads you previo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.HistoryApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.HistoryApi(kensu_datagalaxy_client.ApiClient(configuration))
 limit = 20 # float |  (optional) (default to 20)
 
 try:

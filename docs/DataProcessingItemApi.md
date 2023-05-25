@@ -1,4 +1,4 @@
-# swagger_client.DataProcessingItemApi
+# kensu_datagalaxy_client.DataProcessingItemApi
 
 All URIs are relative to */v2*
 
@@ -22,16 +22,16 @@ Create multiple <b>data processing items</b> and their inputs and outputs in the
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DataProcessingItemApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.DpiBulkModel()] # list[DpiBulkModel] | 
-version_id = swagger_client.VersionId() # VersionId | 
-data_processing_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.DataProcessingItemApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.DpiBulkModel()] # list[DpiBulkModel] | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+data_processing_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Bulk upsert data processing items.
@@ -75,16 +75,16 @@ Create a <b>data processing item</b> and its inputs and outputs in the specified
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DataProcessingItemApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DpiCreationBody() # DpiCreationBody | 
-version_id = swagger_client.VersionId() # VersionId | 
-data_processing_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.DataProcessingItemApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.DpiCreationBody() # DpiCreationBody | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+data_processing_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Create a data processing item.
@@ -128,16 +128,16 @@ Delete a data processing item.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DataProcessingItemApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-data_processing_id = swagger_client.DoubleUuid() # DoubleUuid | 
-data_processing_item_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.DataProcessingItemApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+data_processing_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
+data_processing_item_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Delete a data processing item.
@@ -180,18 +180,18 @@ Return the list of <b>dataProcessingItems</b> contained in the specified <b>data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DataProcessingItemApi(swagger_client.ApiClient(configuration))
-version_id = swagger_client.VersionId() # VersionId | 
-data_processing_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.DataProcessingItemApi(kensu_datagalaxy_client.ApiClient(configuration))
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+data_processing_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 name = 'name_example' # str |  (optional)
 technical_name = 'technical_name_example' # str |  (optional)
-type = swagger_client.DataProcessingItemType() # DataProcessingItemType |  (optional)
+type = kensu_datagalaxy_client.DataProcessingItemType() # DataProcessingItemType |  (optional)
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
 
@@ -241,13 +241,13 @@ Return the list of <b>dataProcessingItem types</b> and their compatible <b>input
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DataProcessingItemApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.DataProcessingItemApi(kensu_datagalaxy_client.ApiClient(configuration))
 
 try:
     # List the data processing items types.
@@ -286,17 +286,17 @@ Update a data processing item and its inputs and outputs in the specified data p
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.DataProcessingItemApi(swagger_client.ApiClient(configuration))
-body = swagger_client.DpiUpdateBody() # DpiUpdateBody | 
-version_id = swagger_client.VersionId() # VersionId | 
-data_processing_id = swagger_client.DoubleUuid() # DoubleUuid | 
-data_processing_item_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.DataProcessingItemApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.DpiUpdateBody() # DpiUpdateBody | 
+version_id = kensu_datagalaxy_client.VersionId() # VersionId | 
+data_processing_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
+data_processing_item_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 
 try:
     # Update a data processing item.

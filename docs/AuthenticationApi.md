@@ -1,4 +1,4 @@
-# swagger_client.AuthenticationApi
+# kensu_datagalaxy_client.AuthenticationApi
 
 All URIs are relative to */v2*
 
@@ -18,13 +18,13 @@ Authorization header must contain a bearer token formatted as follow : <i><b>\"B
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.AuthenticationApi(kensu_datagalaxy_client.ApiClient(configuration))
 
 try:
     # Generate an accessToken.
@@ -63,13 +63,13 @@ An integrationToken has no expiration date but can be regenerated thanks to this
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.AuthenticationApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.AuthenticationApi(kensu_datagalaxy_client.ApiClient(configuration))
 integration_token = 'integration_token_example' # str | 
 
 try:

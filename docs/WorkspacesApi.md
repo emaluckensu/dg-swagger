@@ -1,4 +1,4 @@
-# swagger_client.WorkspacesApi
+# kensu_datagalaxy_client.WorkspacesApi
 
 All URIs are relative to */v2*
 
@@ -18,14 +18,14 @@ Return the list of versions available in the specified workspace.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi(swagger_client.ApiClient(configuration))
-workspace_id = swagger_client.DoubleUuid() # DoubleUuid | 
+api_instance = kensu_datagalaxy_client.WorkspacesApi(kensu_datagalaxy_client.ApiClient(configuration))
+workspace_id = kensu_datagalaxy_client.DoubleUuid() # DoubleUuid | 
 limit = 20 # float |  (optional) (default to 20)
 page = 1 # float |  (optional) (default to 1)
 
@@ -71,13 +71,13 @@ Provide a <b>name</b> to find a specific workspace. \\ If no querystring is prov
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.WorkspacesApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.WorkspacesApi(kensu_datagalaxy_client.ApiClient(configuration))
 name = 'name_example' # str |  (optional)
 
 try:

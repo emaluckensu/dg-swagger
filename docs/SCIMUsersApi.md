@@ -1,4 +1,4 @@
-# swagger_client.SCIMUsersApi
+# kensu_datagalaxy_client.SCIMUsersApi
 
 All URIs are relative to */v2*
 
@@ -21,14 +21,14 @@ Permanently deletes a user.<br><br> When deleting a user that had an owner or st
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SCIMUsersApi(swagger_client.ApiClient(configuration))
-user_id = swagger_client.Uuid() # Uuid | 
+api_instance = kensu_datagalaxy_client.SCIMUsersApi(kensu_datagalaxy_client.ApiClient(configuration))
+user_id = kensu_datagalaxy_client.Uuid() # Uuid | 
 
 try:
     # Delete a user
@@ -69,14 +69,14 @@ Return the corresponding <b>users</b> owned by your account in SCIM format as de
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SCIMUsersApi(swagger_client.ApiClient(configuration))
-user_id = swagger_client.Uuid() # Uuid | 
+api_instance = kensu_datagalaxy_client.SCIMUsersApi(kensu_datagalaxy_client.ApiClient(configuration))
+user_id = kensu_datagalaxy_client.Uuid() # Uuid | 
 filter = 'filter_example' # str |  (optional)
 excluded_attributes = 'excluded_attributes_example' # str |  (optional)
 attributes = 'attributes_example' # str |  (optional)
@@ -132,13 +132,13 @@ Return a list of all the <b>users</b> owned by your account in SCIM format as de
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SCIMUsersApi(swagger_client.ApiClient(configuration))
+api_instance = kensu_datagalaxy_client.SCIMUsersApi(kensu_datagalaxy_client.ApiClient(configuration))
 filter = 'filter_example' # str |  (optional)
 excluded_attributes = 'excluded_attributes_example' # str |  (optional)
 attributes = 'attributes_example' # str |  (optional)
@@ -193,15 +193,15 @@ Patch a user.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SCIMUsersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SCIMPatchOperationPayload() # SCIMPatchOperationPayload | 
-user_id = swagger_client.Uuid() # Uuid | 
+api_instance = kensu_datagalaxy_client.SCIMUsersApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.SCIMPatchOperationPayload() # SCIMPatchOperationPayload | 
+user_id = kensu_datagalaxy_client.Uuid() # Uuid | 
 
 try:
     # Patch a user.
@@ -244,14 +244,14 @@ Create a user and add it to your account.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.SCIMUsersApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SCIMUser() # SCIMUser | 
+api_instance = kensu_datagalaxy_client.SCIMUsersApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.SCIMUser() # SCIMUser | 
 
 try:
     # Create a user.

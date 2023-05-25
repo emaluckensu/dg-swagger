@@ -1,4 +1,4 @@
-# swagger_client.TeamsApi
+# kensu_datagalaxy_client.TeamsApi
 
 All URIs are relative to */v2*
 
@@ -21,14 +21,14 @@ This endpoint deletes a list of teams, specified by their <code>id</code> given 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TeamsApi(swagger_client.ApiClient(configuration))
-body = [swagger_client.TeamId()] # list[TeamId] | 
+api_instance = kensu_datagalaxy_client.TeamsApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = [kensu_datagalaxy_client.TeamId()] # list[TeamId] | 
 
 try:
     # Delete multiple teams
@@ -69,14 +69,14 @@ This endpoint create a team.<br> You can optionally add a list of <code>members<
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TeamsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.OmitTeamIdOrIconHashOrMembersCount_() # OmitTeamIdOrIconHashOrMembersCount_ | 
+api_instance = kensu_datagalaxy_client.TeamsApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.OmitTeamIdOrIconHashOrMembersCount_() # OmitTeamIdOrIconHashOrMembersCount_ | 
 
 try:
     # Create team
@@ -118,14 +118,14 @@ This endpoint deletes the team associated to the <code>id</code> given in the re
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TeamsApi(swagger_client.ApiClient(configuration))
-id = swagger_client.TeamId() # TeamId | 
+api_instance = kensu_datagalaxy_client.TeamsApi(kensu_datagalaxy_client.ApiClient(configuration))
+id = kensu_datagalaxy_client.TeamId() # TeamId | 
 
 try:
     # Delete a team
@@ -166,16 +166,16 @@ This endpoint fetches each team existing in your client space.<br> Each team is 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TeamsApi(swagger_client.ApiClient(configuration))
-id = [swagger_client.DoubleUuid()] # list[DoubleUuid] | Filters result to match **team id** (optional)
+api_instance = kensu_datagalaxy_client.TeamsApi(kensu_datagalaxy_client.ApiClient(configuration))
+id = [kensu_datagalaxy_client.DoubleUuid()] # list[DoubleUuid] | Filters result to match **team id** (optional)
 name = ['name_example'] # list[str] | Filters result to match **team name** (optional)
-access = [swagger_client.AccessType()] # list[AccessType] | Filters result to match **team access** (optional)
+access = [kensu_datagalaxy_client.AccessType()] # list[AccessType] | Filters result to match **team access** (optional)
 include_members = false # bool | When <code>true</code>, adds a <code>members</code> property to each teams in the response payload. This property will contain a list of users composing the team. (optional) (default to false)
 
 try:
@@ -221,15 +221,15 @@ This endpoint updates the team associated to the <code>id</code> given in the re
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import kensu_datagalaxy_client
+from kensu_datagalaxy_client.rest import ApiException
 from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = swagger_client.TeamsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.PartialTeamCreationPayload_() # PartialTeamCreationPayload_ | 
-id = swagger_client.TeamId() # TeamId | 
+api_instance = kensu_datagalaxy_client.TeamsApi(kensu_datagalaxy_client.ApiClient(configuration))
+body = kensu_datagalaxy_client.PartialTeamCreationPayload_() # PartialTeamCreationPayload_ | 
+id = kensu_datagalaxy_client.TeamId() # TeamId | 
 
 try:
     # Update team
